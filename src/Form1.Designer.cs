@@ -38,7 +38,7 @@ namespace EmptyProject
             //
             // Test
             //
-            this.Test.Location = new System.Drawing.Point(109, 20);
+            this.Test.Location = new System.Drawing.Point(109, 10);
             this.Test.Name = "Test";
             this.Test.Size = new System.Drawing.Size(75, 23);
             this.Test.TabIndex = 0;
