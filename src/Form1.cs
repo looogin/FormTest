@@ -5,8 +5,9 @@ namespace EmptyProject
 {
     public partial class Form1
     {
-        private readonly Color[] cd = {Color.Red,Color.Beige,Color.Coral,Color.Green, Color.GreenYellow };
-        private  int i;
+        private int i;
+        Random t = new Random();
+
         public Form1()
         {
             InitializeComponent();
@@ -19,10 +20,7 @@ namespace EmptyProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.BackColor = cd[i];
-            i++;
-            if (i >= cd.Length) i = 0;
-            Console.WriteLine(i);
-        }
+            pictureBox1.BackColor = Color.FromArgb(255, t.Next(0, 255), t.Next(0, 255),t.Next(0, 255));
     }
+
 }
